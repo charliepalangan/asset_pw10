@@ -1,4 +1,3 @@
-/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -9,10 +8,10 @@ body {
   background: linear-gradient(to bottom, #0f172a, #1e3a8a, #0f172a);
   color: white;
   min-height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
 }
 
-/* Container layouts */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -38,7 +37,6 @@ body {
   max-width: 800px;
 }
 
-/* Typography */
 .judul {
   font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 800;
@@ -68,13 +66,11 @@ body {
   line-height: 1.3;
 }
 
-/* Content sections */
 .container-content {
   padding: clamp(2rem, 6vw, 4rem) 2rem;
   position: relative;
 }
 
-/* Grid system */
 .kolom {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
@@ -85,7 +81,6 @@ body {
   margin: 0 auto;
 }
 
-/* Floating icons with improved positioning */
 .iconGamePad,
 .iconGameConsole,
 .iconHealthPotion,
@@ -131,9 +126,9 @@ body {
   animation-delay: 3s;
 }
 
-/* Refined animations */
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) rotate(0deg);
   }
   50% {
@@ -152,7 +147,6 @@ body {
   }
 }
 
-/* Enhanced scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -173,16 +167,15 @@ body {
   background: linear-gradient(to bottom, #0891b2, #2563eb);
 }
 
-/* Media queries for better responsiveness */
 @media (max-width: 768px) {
   .container {
     padding: 1rem;
   }
-  
+
   .container-landing {
     padding: 1rem;
   }
-  
+
   .iconGamePad,
   .iconGameConsole,
   .iconHealthPotion,
@@ -191,20 +184,18 @@ body {
   }
 }
 
-/* Dark mode support */
 @media (prefers-color-scheme: dark) {
   body {
     background: linear-gradient(to bottom, #0f172a, #1e3a8a, #0f172a);
   }
 }
 
-/* Print styles */
 @media print {
   body {
     background: none;
     color: #000;
   }
-  
+
   .judul {
     color: #000;
     -webkit-text-fill-color: initial;
